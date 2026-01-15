@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<!--
+    =====================================================================
+    SHIPLIFE TOGGLE INSTRUCTIONS
+    =====================================================================
+    
+    This file has TWO places where you can toggle between "Coming Soon" 
+    and "Live" modes for the Shiplife globe:
+    
+    1. HERO MINI-GLOBE (around line 880) - small preview in hero section
+    2. MAIN SHIPLIFE SECTION (around line 920) - main globe preview
+    
+    TO GO LIVE:
+    - Find each "SHIPLIFE TOGGLE" section
+    - Comment out the "COMING SOON VERSION" block
+    - Uncomment the "LIVE VERSION" block
+    
+    TO GO BACK TO COMING SOON:
+    - Do the opposite!
+    
+    Search for "SHIPLIFE TOGGLE" to find both locations quickly.
+    =====================================================================
+-->
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Derrick Hudson — Live Music</title>
     <meta name="description" content="Professional musician with 50+ years experience. Live looping performances, cruise ship entertainer, world traveler. Book Derrick Hudson for your venue or event.">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=DM+Sans:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --gold: #d4a574;
@@ -873,15 +895,29 @@
                     <a href="#contact" class="btn btn-black">Book Now</a>
                 </div>
                 <div class="mini-globe-container">
+                    <!-- ========== SHIPLIFE TOGGLE: HERO MINI-GLOBE ========== -->
+                    <!-- COMING SOON VERSION (uncomment this, comment out LIVE VERSION below) -->
+                    <div class="mini-globe-preview" style="cursor: default; opacity: 0.7;">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1736487865/Screen_Shot_2026-01-10_at_1.23.28_AM_l2np12.png" alt="Shiplife Globe">
+                    </div>
+                    <div class="mini-globe-label">
+                        <span class="text">Ship</span><span class="text gold">Life</span>
+                        <span style="font-size: 0.55rem; letter-spacing: 0.15em; opacity: 0.7; margin-left: 0.5rem;">COMING SOON</span>
+                    </div>
+                    <!-- END COMING SOON VERSION -->
+                    
+                    <!-- LIVE VERSION (uncomment this, comment out COMING SOON VERSION above)
                     <a href="#shiplife" class="mini-globe-preview">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768026183/Screen_Shot_2026-01-10_at_1.23.28_AM_l2np12.png" alt="Shiplife Globe">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1736487865/Screen_Shot_2026-01-10_at_1.23.28_AM_l2np12.png" alt="Shiplife Globe">
                     </a>
                     <div class="mini-globe-label">
                         <span class="text">Ship</span><span class="text gold">Life</span>
                         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
                         </svg>
                     </div>
+                    END LIVE VERSION -->
+                    <!-- ========== END SHIPLIFE TOGGLE ========== -->
                 </div>
             </div>
         </div>
@@ -893,7 +929,16 @@
         <h2 class="section-title">About Derrick</h2>
         <div class="bio-content">
             <p class="bio-text">
-                For 12 years, I performed as a solo guitarist/vocalist and pianist for various cruise lines including 3 years as a soloist with Seabourn, recently rated #1 small cruise line in the world, as well as Holland America, Cunard, and P&O Australia cruise lines. In 2019, I graciously accepted a position on the iconic Queen Victoria as a Queen's Room Vocalist, sharing the stage with the exceptional voice of Mandy Karridge and a fabulous 9 piece orchestra. Highlighting this journey was my time as resident musician at Reithi Rah Resort in the Maldives. Returning to the City of Toledo in 2020, I am now performing all around NW Ohio and the surrounding areas.
+                For 12 years, I performed as a solo guitarist/vocalist 
+and pianist for various cruise lines including 3 years as a soloist with
+ Seabourn, recently rated #1 small cruise line in the world, as well as 
+Holland America, Cunard, and P&amp;O Australia cruise lines. In 2019, I 
+graciously accepted a position on the iconic Queen Victoria as a Queen's
+ Room Vocalist, sharing the stage with the exceptional voice of Mandy 
+Karridge and a fabulous 9 piece orchestra. Highlighting this journey was
+ my time as resident musician at Reithi Rah Resort in the Maldives. 
+Returning to the City of Toledo in 2020, I am now performing all around 
+NW Ohio and the surrounding areas.
             </p>
         </div>
     </section>
@@ -904,21 +949,38 @@
             <p class="section-subtitle">Interactive Experience</p>
             <h2 class="section-title">Shiplife</h2>
             <p class="shiplife-description">
-                Explore the three doors that changed everything. An interactive 3D globe featuring the stories, photos, and tales from 12 years of life at sea.
+                Explore the three doors that changed everything. An 
+interactive 3D globe featuring the stories, photos, and tales from 12 
+years of life at sea.
             </p>
             
+            <!-- ========== SHIPLIFE TOGGLE: MAIN GLOBE PREVIEW ========== -->
+            <!-- COMING SOON VERSION (uncomment this, comment out LIVE VERSION below) -->
+            <div class="globe-preview-container">
+                <div class="globe-preview" style="cursor: default;">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1736487865/Screen_Shot_2026-01-10_at_1.23.28_AM_l2np12.png" alt="Shiplife Interactive Globe" style="opacity: 0.6;">
+                    <div class="play-overlay">
+                        <div class="coming-soon-badge" style="background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%); color: var(--navy); padding: 0.75rem 1.5rem; border-radius: 4px; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600;">Coming Soon</div>
+                    </div>
+                </div>
+            </div>
+            <p class="shiplife-hint">An interactive journey — launching soon</p>
+            <!-- END COMING SOON VERSION -->
+            
+            <!-- LIVE VERSION (uncomment this, comment out COMING SOON VERSION above)
             <div class="globe-preview-container">
                 <a href="https://babbage12.github.io/shiplife/" target="_blank" class="globe-preview">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768026183/Screen_Shot_2026-01-10_at_1.23.28_AM_l2np12.png" alt="Shiplife Interactive Globe">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1736487865/Screen_Shot_2026-01-10_at_1.23.28_AM_l2np12.png" alt="Shiplife Interactive Globe">
                     <div class="play-overlay">
                         <div class="play-button">
-                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
                         </div>
                     </div>
                 </a>
             </div>
-            
             <p class="shiplife-hint">Click to explore the interactive globe</p>
+            END LIVE VERSION -->
+            <!-- ========== END SHIPLIFE TOGGLE ========== -->
         </div>
     </section>
 
@@ -987,10 +1049,7 @@
         <h2 class="section-title">Video</h2>
         <div class="video-container">
             <div class="video-wrapper">
-                <iframe 
-                    src="https://www.youtube.com/embed/9EwaM8pGJoI?rel=0&showinfo=0" 
-                    allowfullscreen
-                    title="Derrick Hudson Performance">
+                <iframe src="https://www.youtube.com/embed/9EwaM8pGJoI" allowfullscreen="" title="Derrick Hudson Performance">
                 </iframe>
             </div>
         </div>
@@ -1023,7 +1082,7 @@
                 <div class="social-links">
                     <a href="https://www.facebook.com/250342485518328" target="_blank" class="social-link" title="Facebook">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                         </svg>
                     </a>
                 </div>
@@ -1050,5 +1109,6 @@
             });
         });
     </script>
-</body>
-</html>
+
+
+</body></html>
